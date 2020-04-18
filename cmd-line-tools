@@ -2,4 +2,8 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 ### CASK
-brew cask install alfred
+brew cask install alfred 
+brew cask install tor-browser transmission
+
+### DEVELOPMEENT
+brew cask install visual-studido-code 
