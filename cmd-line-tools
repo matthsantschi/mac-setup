@@ -2,7 +2,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 ### CASK
-brew cask install alfred 
+rew cask install alfred vlc  
 brew cask install tor-browser transmission
 
 ### DEVELOPMEENT
