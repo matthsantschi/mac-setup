@@ -9,4 +9,8 @@ brew cask install tor-browser transmission
 brew install mysql-client
 
 ### DEVELOPMEENT
-brew cask install visual-studido-code 
+brew cask install visual-studido-code
+
+### aktivate Firewall
+defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+
