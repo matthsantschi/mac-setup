@@ -14,6 +14,8 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 
 
-RUN LOCAL MYSCL SERVER
-$ docker run --name=mysql1 -d -p 3306:3306 -e MYSQL_USER=dev -e MYSQL_PASSWORD=dev123 -e MYSQL_DATABASE=dev mysql/mysql-server
+#RUN LOCAL MYSCL SERVER
+docker run --name=mysql1 -d -p 3306:3306 -e MYSQL_USER=dev -e MYSQL_PASSWORD=dev123 -e MYSQL_DATABASE=dev mysql/mysql-server
+#RUN LOCAL phpmyadmin
+docker run --name myadmin -d --link mysql1:db -p 8080:80 phpmyadmin/phpmyadmin                       
 
