@@ -1,0 +1,19 @@
+#docker-compose build a container
+ docker-compose.exe build
+#docker start container interactive BaSh
+docker run -it <image> /bin/bash
+#docker with volume
+docker run -itv /home/ms/ws/fabrikapi/:/app/ image  /bin/bash
+#run command in docker (login)
+docker exec -it image /bin/bash
+#restart docker deamon
+sudo systemctl start docker
+# Alle Container löschen
+docker rm $(docker ps -a -q)
+# Alle Abbilder/Images löschen
+docker rmi $(docker images -q)
+
+
+RUN LOCAL MYSCL SERVER
+$ docker run --name=mysql1 -d -p 3306:3306 -e MYSQL_USER=dev -e MYSQL_PASSWORD=dev123 -e MYSQL_DATABASE=dev mysql/mysql-server
+
