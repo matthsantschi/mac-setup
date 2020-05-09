@@ -14,3 +14,5 @@ brew cask install visual-studido-code
 ### aktivate Firewall
 defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 
+### to connect to mysql-server via shell
+brew cask install mysql-shell
