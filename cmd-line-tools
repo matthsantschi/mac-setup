@@ -6,7 +6,7 @@ brew cask install alfred vlc
 brew cask install tor-browser transmission
 
 ### BREW
-brew install mysql-client
+brew install mysql-client mactex
 
 ### DEVELOPMEENT
 brew cask install visual-studido-code
